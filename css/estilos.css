@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <<< ---------------- * ---------------- *  ---------------- >>> */
+
+/* Generales */
+
+.mrt30 {
+    margin-top: 30px;
+}
+
+.mrl30 {
+    margin-left: 30px;
+}
+
+.mr20 {
+    margin: 20px;
+}
+
+.mr10 {
+    margin: 10px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mw50 {
+    max-width: 50px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mrr30 {
+    margin-right: 30px;
+}
+
+.h-60 {
+    height: 30%;
+}
+
+.h400 {
+    height: 400px;
+}
+
+.centrado {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ico {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.text-indent {
+    text-indent: 30px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/* Fin Generales */
+
+/* header */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: rgb(39, 38, 38); */
+    /* background-color: rgb(252, 97, 4); */
+    background-color: rgba(252, 97, 4, 0.7);
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-right: 10px; */
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.img-ico {
+    width: 35px;
+    height: 35px;
+}
+
+.text-menu {
+    color: #fff;
+    font-size: 11px;
+}
+
+
+
+/* Fin header */
+
+/* Pantalla Celulares y tablets */
+
+/* Menu Hamburguesa */
+
+@media (min-width: 769px) {
+    .menu-hamburguesa {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        display: none;
+    }
+
+    .img-logo {
+        width: 75px;
+        height: 75px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* height: 100px; */
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        /* position: fixed; */
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        background-color: rgba(252, 97, 4, 0.7);
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0.5rem;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        /* background-color: rgba(0, 0, 0, 1); */
+        background-color: rgba(252, 97, 4);
+        padding: 15px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
+        border-radius: 10px;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        /* align-items: first baseline; */
+        text-align: right;
+        gap: 1rem;
+        right: 1px;
+        font-size: 20px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        padding: 0px;
+    }
+
+    .nav-list li a:hover {
+        background-color: rgba(204, 204, 204, 0.5);
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0px;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+
+    .abrir-menu {
+        color: black;
+    }
+
+    .cerrar-menu {
+        color: white;
+    }
+
+    .img-abrir {
+        width: 35px;
+        height: 35px;
+    }
+
+    .img-cerrar {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Fin Menu Hamburguesa */
+
+
+/* Imagen Principal */
+
+.img-principal {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/* Fin Imagen Principal */
+
+
+
+/* Cards */
+
+.contenedor-cards {
+    display: flexbox;
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.img-tarjetas {
+    max-width: 280px;
+    max-height: 450px;
+    border-radius: 10px;
+}
+
+
+/* Pantalla para Celulares */
+
+@media (max-width: 480px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .img-tarjetas {
+        width: 150px;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .presentacion h5 {
+        font-size: 14px;
+    }
+
+}
+
+/* Fin Pantalla de Celulares */
+
+/* Pantalla de tablets */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .img-tarjetas {
+        width: 150px;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .presentacion h5 {
+        font-size: 14px;
+    }
+
+}
+
+/* Fin Pantalla Tablets */
+
+
+/* Fin Cards */
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(252, 97, 4, 0.7);
+    align-items: center;
+}
+
+.logo-footer {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.text-footer {
+    color: #fff;
+    line-height: 10px;
+    text-align: right;
+}
+
+
+/* Pantalla para Celulares */
+
+@media (max-width: 480px) {
+
+    .logo-footer {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .text-footer {
+        color: #fff;
+        line-height: 5px;
+        font-size: 12px;
+        text-align: right;
+    }
+}
+
+
+/* Fin Footer */
+
+
+
+/* Dev */
+
+.contenedor-dev {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(252, 97, 4, 0.7);
+}
+
+.dev {
+    color: #fff;
+    text-decoration: none;
+    text-indent: 30px;
+}
+
+/* Fin Dev */
