@@ -241,13 +241,18 @@
 
 /* Fin Menu Hamburguesa */
 
+.container {
+    max-width: 1000px;
+}
 
 /* Imagen Principal */
 
 .img-principal {
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid black;
+    max-width: 1000px;
+    max-height: 200px;
+    /* border-radius: 10px; */
+    border: 1px solid black;
 }
 
 /* Fin Imagen Principal */
@@ -258,18 +263,19 @@
 
 .contenedor-cards {
     display: flexbox;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
 }
 
 .img-tarjetas {
-    width: 280px;
-    height: 380px;
+    width: 210px;
+    height: 280px;
     border-radius: 10px;
 }
 
@@ -292,8 +298,8 @@
     }
 
     .img-tarjetas {
-        width: 180px;
-        height: 240px;
+        width: 160px;
+        height: 220px;
         border-radius: 10px;
     }
 
