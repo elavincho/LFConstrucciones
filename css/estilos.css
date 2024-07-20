@@ -21,6 +21,14 @@
     margin-left: 30px;
 }
 
+.mr30 {
+    margin: 30px;
+}
+
+.mr50 {
+    margin: 50px;
+}
+
 .mr20 {
     margin: 20px;
 }
@@ -115,7 +123,31 @@
     font-size: 11px;
 }
 
+.header a {
+    text-decoration: none;
+}
 
+.cont-presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.presentacion h5 {
+    margin-right: 50px;
+}
+
+/* Imagen Principal */
+
+.img-principal {
+    /* width: 550px; */
+    width: 100%;
+    height: 350x;
+    /* border: 1px solid black; */
+    padding-left: 50px;
+}
+
+/* Fin Imagen Principal */
 
 /* Fin header */
 
@@ -237,27 +269,20 @@
         width: 45px;
         height: 45px;
     }
+
+    /* Fin Menu Hamburguesa */
+
+    .cont-presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-principal {
+        width: 100%;
+        height: 150px;
+        padding-left: 0px;
+    }
 }
-
-/* Fin Menu Hamburguesa */
-
-.container {
-    max-width: 1000px;
-}
-
-/* Imagen Principal */
-
-.img-principal {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 200px;
-    /* border-radius: 10px; */
-    border: 1px solid black;
-}
-
-/* Fin Imagen Principal */
-
-
 
 /* Cards */
 
@@ -274,8 +299,10 @@
 }
 
 .img-tarjetas {
-    width: 210px;
-    height: 280px;
+    /* width: 210px; */
+    width: 95%;
+    /* height: 280px; */
+    /* height: 280px; */
     border-radius: 10px;
 }
 
@@ -298,16 +325,19 @@
     }
 
     .img-tarjetas {
-        width: 160px;
-        height: 220px;
+        /* width: 160px; */
+        width: 95%;
+        /* height: 220px; */
         border-radius: 10px;
     }
 
     .presentacion h5 {
         font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .card-title{
+    .card-title {
         font-size: 14px;
     }
 
@@ -315,6 +345,7 @@
         width: 20px;
         height: 20px;
     }
+
     .wsp {
         font-size: 8px;
     }
@@ -334,14 +365,34 @@
     }
 
     .img-tarjetas {
-        width: 150px;
-        height: 220px;
+        width: 95%;
+        /* height: 220px; */
         border-radius: 10px;
     }
 
     .presentacion h5 {
         font-size: 14px;
+        margin-right: 20px;
     }
+
+    .cont-presentacion {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cont-img-principal {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-principal {
+        width: 100%;
+        height: 150px;
+        padding-left: 0px;
+    }
+
+
 
 }
 
@@ -380,8 +431,8 @@
 @media (max-width: 480px) {
 
     .logo-footer {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         border: 2px solid #fff;
     }
@@ -389,7 +440,7 @@
     .text-footer {
         color: #fff;
         line-height: 5px;
-        font-size: 12px;
+        font-size: 11px;
         text-align: right;
     }
 }
