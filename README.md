@@ -1,4 +1,4 @@
-<img src="https://github.com/elavincho/elavincho/blob/main/logo-ok.png" width="80" height="80" alt="img"/> 
+<img src="https://github.com/elavincho/elavincho/blob/main/logo-ok.png" width="80" height="80" alt="logo-lf-construcciones"/> 
 
 # LFConstrucciones
 
